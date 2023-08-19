@@ -1,0 +1,28 @@
+/* Define default styles for all screen sizes */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Override styles for screens smaller than 768px */
+  @media only screen and (max-width: 767px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+  }
+  
+  /* Override styles for screens smaller than 480px */
+  @media only screen and (max-width: 479px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 5px;
+    }
+  }
+  

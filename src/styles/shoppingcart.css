@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tfoot td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Media queries */
+  
+  @media (min-width: 768px) {
+    .search-box {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .search-box input[type="text"] {
+      width: 60%;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  
+    .product-card li {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .product-card li {
+      width: calc(33.33% - 10px);
+    }
+  }
+  
+  .heading{
+    text-align: center;
+  }
